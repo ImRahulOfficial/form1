@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="data">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" >
+                <p id="message_name" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" placeholder="Enter Your Username" >
+                <p id="message_username" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" >
+                <p id="message_password" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age" >
+                <p id="message_age" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" id="email"  placeholder="Enter Email Address">
+                <p id="message_email" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="phone">Phone Number: </label>
+                <input type="tel" name="phone" id="phone"  placeholder="Enter Your Phone Number">
+                <p id="message_phone" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" id="gender_male" value="male" >Male
+                <input type="radio" name="gender" id="gender_female" value="female" >Female 
+                <br>
+                <p id="message_gender" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob" id="dob" >
+                <p id="message_dob" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="course">Course: </label>
+                <select name="course" id="course" >
+                    <option value="">Select a course</option>
+                    <option value="btech">B.tech</option>
+                    <option value="mtech">M.tech</option>
+                    <option value="phd">Phd</option>
+                    <option value="bca">BCA</option>
+                    <option value="mca">MCA</option>
+                    <option value="diploma">Diploma</option>
+                </select>
+                <p id="message_course" class="error-message"></p>
+            </div>
+            <div class="data">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="10" ></textarea>
+                <p id="message_address" class="error-message"></p>
+            </div>
+         
+            <div class="data">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+        <p class="success_msg" id="success_message"></p>
+    </div>
+</body>
+
+</html>
